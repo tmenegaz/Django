@@ -22,7 +22,7 @@ Para esse projeto e os demais ambiente de desenvolvimento Python/Django tenha em
     - atom-jango;
     - python-tools.
 
-No diretório de trabalho para os projetos desse material cie seu Virtualenv e instale seus pacotes
+No diretório de trabalho para os projetos desse material crie seu Virtualenv e instale seus pacotes
 > Neste caso estou no diretório Documentos do Linux: /home/tmenegaz/Documentos/):
 
 Abaixo eu escrevi cada um dos comandos necessários para a configuração do ambiente, a partir do início do Virtualenv até a instalação do Django, sepatados por ponto e vírgula (;).
@@ -34,4 +34,5 @@ $ virtualenv -p python3.5 ./aulaDjnago/py3.5; cd ./aulaDjnago/py3.5/; source aul
 [Voltar ao topo(Conteúdo)](#conteúdo)
 
 "A definir"
+
 [Creative Commons Attribution 3.0 Unported (CC BY 3.0) License](http://creativecommons.org/licenses/by/3.0/)
