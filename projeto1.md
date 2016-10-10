@@ -31,7 +31,7 @@ $ virtualenv -p python3.5 ./aulaDjnago/py3.5; cd ./aulaDjnago/py3.5/; source aul
 ```
 > No windows use o comando abaixo:
 ```cmd
->>virtualenv .\aulaDjango\py3.5 && cd .\aulaDjango\py3.5\ && .\Scripts\activate.bat && pip install -U pip && pip install django==1.9 && pip list && dir
+>>virtualenv .\aulaDjango\py3.5 && cd .\aulaDjango\py3.5\ && .\Scripts\activate.bat && pip install -U pip && pip install django==1.9
 ```
 
 # O projeto
