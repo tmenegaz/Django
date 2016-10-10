@@ -7,7 +7,7 @@
 # Primeiro projeto com Django
 [Voltar ao topo(Conteúdo)](#conteúdo)
 
-Para esse projeto e os demais, ambiente de desenvolvimento Python/Django terá as segintes características, asaber:
+Para esse projeto e os demais ambiente de desenvolvimento Python/Django tenha em mente as segintes características, a saber:
 - Linux - Ubuntu 16.04;
 - Python 3;
 - pip3;
@@ -21,16 +21,13 @@ Para esse projeto e os demais, ambiente de desenvolvimento Python/Django terá a
     - atom-jango;
     - python-tools.
 
-uma linguagem de programação com uma sintaxe simples e clara. É chamada de linguagem de programação de alto nível por ser de fácil entendimento para seres humanos, assim como Perl, Scala, Ruby, Lua, JavaScript etc.  Por meio da linguagem Python é possível produzir soluções para administrar sistemas diversos, tais como:
-- locais;
-- desktop;
-- web;
-- mineração de dados;
-- redes;
-- jogos;
-- embarcados; dentre outros
+No diretório de trabalho para os projetos desse material cie seu Virtualenv e instale seus pacotes
+> Neste caso estou no diretório Documentos do Linux: /home/tmenegaz/Documentos/):
 
-O Python é pré-requisito para a utilização do Django. Para a utilização da linguagem Python e do framework Django será necessário ter o  Python instalado, na sua máquina, na versão 3. É necessário ter o pip3 instalado e algum editor de texto. Nada impede a produção por meio do Python 2.x, contudo essa versão não será tratada nesse material.
+Abaixo eu escrevi cada um dos comandos necessários para a configuração do ambiente, a partir do início do Virtualenv até a instalação do Django, sepatados por ponto e vírgula (;).
+```sh
+$ virtualenv -p python3.5 ./aulaDjnago/py3.5; cd ./aulaDjnago/py3.5/; source aulaDjnago/py3.5/bin/activate; pip3 install -U pip; sudo pip3 install django==1.9; cd ./aulaDjnago/py3.5
+```
 
 # O Django
 [Voltar ao topo(Conteúdo)](#conteúdo)
