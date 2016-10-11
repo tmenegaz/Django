@@ -59,10 +59,11 @@ wheel (0.30.0a0)
 ```
 Caso não esteja conforme acima volte para [Comandos de ativação do ambiente](#comandos-de-ativação-do-ambiente)  e refaça o processo.
 
-Tudo pronto. Em seu diretório ```py3.5$``` digite o comando abaixo para criar seu projeto Django:
+Esse primeiro projeto terá o nome _aula1_ e um conjunto de pastas e arquivos gerados automaticamente pelo Django. Em seu diretório ```py3.5$``` digite o comando abaixo para criar seu projeto Django.
 ```sh
 py3.5$ django-admin startproject aula1
 ```
+Agora, por meio da barra de ferramentas do ```Atom```: ```File/Open Folder``` selecione a pasta ```aula1``` clique em ```ok```.
 
 ---
 
