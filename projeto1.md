@@ -63,7 +63,7 @@ Esse primeiro projeto terá o nome _aula1_ e um conjunto de pastas e arquivos ge
 ```sh
 py3.5$ django-admin startproject aula1
 ```
-Agora, por meio da barra de ferramentas do ```Atom```: ```File/Open Folder``` selecione a pasta ```aula1``` clique em ```ok```.
+Agora, por meio da barra de ferramentas do ```Atom```: ```File/Open Folder``` selecione a pasta ```aula1``` e clique em ```ok```.
 
 ---
 
