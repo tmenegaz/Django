@@ -38,7 +38,7 @@ $ virtualenv -p python3.5 ./aulaDjango/py3.5 && cd ./aulaDjango/py3.5/ && source
 >>virtualenv .\aulaDjango\py3.5 && cd .\aulaDjango\py3.5\ && .\Scripts\activate.bat && pip install -U pip && pip install django==1.9
 ```
 
-Serão incorporados ao ambiente de desenvolvimento novos itens, na medida em que o projeto necessite da instalaçao de alguma nova biblioteca ou ferramenta.
+Serão incorporados ao ambiente de desenvolvimento novos itens, na medida em que o projeto necessite da instalação de alguma nova biblioteca ou ferramenta.
 
 ---
 
