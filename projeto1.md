@@ -1,14 +1,14 @@
 # Conteúdo
 
 1. **[Primeiro projeto com Django](#primeiro-projeto-com-django)**  
+1.1 [Comandos de ativação do ambiente](#comandos-de-ativação-do-ambiente)  
 2. **[O projeto](#o-projeto)**  
 
 ---
 
 # Primeiro projeto com Django
-[Voltar ao topo(Conteúdo)](#conteúdo)
-
-Para esse projeto e os demais ambiente de desenvolvimento Python/Django tenha em mente as segintes características, a saber:
+[Voltar ao topo(Conteúdo)](#conteúdo)   
+Para esse projeto, e os demais, o ambiente de desenvolvimento Python/Django possui as segintes configurações básicas, a saber:
 - Linux - Ubuntu 16.04;
 - Python 3;
 - pip3;
@@ -22,21 +22,42 @@ Para esse projeto e os demais ambiente de desenvolvimento Python/Django tenha em
     - atom-jango;
     - python-tools.
 
-No diretório de trabalho para os projetos desse material crie seu Virtualenv e instale seus pacotes
+## Comandos de ativação do ambiente
+[Voltar ao topo(Conteúdo)](#conteúdo)   
+No diretório de trabalho para os projetos desse material crie seu Virtualenv e instale suas bibliotecas.
 > Neste caso estou no diretório Documentos do Linux: /home/tmenegaz/Documentos/)
 
 Abaixo estão, reunidos em apenas uma linha, cada um dos comandos necessários para a configuração do ambiente, a partir do carregamento do Virtualenv até a instalação do Django, sepatados por &&.
+Abra seu _terminal_ Linux com ```Crtl+Alt+t```.
 ```sh
 $ virtualenv -p python3.5 ./aulaDjango/py3.5 && cd ./aulaDjango/py3.5/ && source ./bin/activate && pip3 install -U pip && pip3 install django==1.9
 ```
-> No windows use o comando abaixo:
+> No windows, abra o _cmd_ com ```Winkey(simbolo windows)+r``` digite _cmd_ e precione ```Enter```, e, então, use o comando abaixo.
 ```cmd
 >>virtualenv .\aulaDjango\py3.5 && cd .\aulaDjango\py3.5\ && .\Scripts\activate.bat && pip install -U pip && pip install django==1.9
 ```
 
-# O projeto
-[Voltar ao topo(Conteúdo)](#conteúdo)
+Serão incorporados ao ambiente de desenvolvimento novos itens, na medida em que o projeto necessite da instalaçao de alguma nova biblioteca ou ferramenta.
 
-"A definir"
+---
+
+# O projeto
+[Voltar ao topo(Conteúdo)](#conteúdo)  
+Caso o Virtualenv não esteja ativado, ative-o: pelo _terminal_ do Linux, em seu diretório ```py3.5$``` ative o virtualenv,  por meio do comando
+```sh
+py3.5$ source ./bin/activate
+(py3.5)tmenegaz@tam:~/Documentos/aulaDjango/py3.5$
+```
+Em seguida digite ```pip3 list``` para saber se o django está devidamente instalado na versão 1.9 do seu virtualenv.
+```sh
+py3.5$ pip3 list
+Django (1.9)
+pip (8.1.2)
+setuptools (28.3.0)
+wheel (0.30.0a0)
+```
+Caso não esteja conforme acima volte para [Comandos de ativação do ambiente](#comandos-de-ativação-do-ambiente)  e refaça o processo.
+
+---
 
 [Creative Commons Attribution 3.0 Unported (CC BY 3.0) License](http://creativecommons.org/licenses/by/3.0/)
