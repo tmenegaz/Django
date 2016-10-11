@@ -27,7 +27,7 @@ No diretório de trabalho para os projetos desse material crie seu Virtualenv e 
 
 Abaixo estão, reunidos em apenas uma linha, cada um dos comandos necessários para a configuração do ambiente, a partir do carregamento do Virtualenv até a instalação do Django, sepatados por &&.
 ```sh
-$ virtualenv -p python3.5 ./aulaDjango/py3.5 && cd ./aulaDjango/py3.5/ && source ./bin/activate && pip3 install -U pip && sudo pip3 install django==1.9
+$ virtualenv -p python3.5 ./aulaDjango/py3.5 && cd ./aulaDjango/py3.5/ && source ./bin/activate && pip3 install -U pip && pip3 install django==1.9
 ```
 > No windows use o comando abaixo:
 ```cmd
