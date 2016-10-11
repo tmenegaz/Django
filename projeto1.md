@@ -29,6 +29,10 @@ Abaixo eu escrevi cada um dos comandos necessários para a configuração do amb
 ```sh
 $ virtualenv -p python3.5 ./aulaDjnago/py3.5; cd ./aulaDjnago/py3.5/; source aulaDjnago/py3.5/bin/activate; pip3 install -U pip; sudo pip3 install django==1.9; cd ./aulaDjnago/py3.5
 ```
+> No windows use o comando abaixo:
+```cmd
+>>virtualenv .\aulaDjango\py3.5 && cd .\aulaDjango\py3.5\ && .\Scripts\activate.bat && pip install -U pip && pip install django==1.9
+```
 
 # O projeto
 [Voltar ao topo(Conteúdo)](#conteúdo)
