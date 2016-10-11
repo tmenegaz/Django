@@ -184,6 +184,6 @@ Instalar os requisitos e dependência no outro computador
 ```sh
 $ pip3 install -r requeriments.txt
 ```
-Agora é possível criar um primeiro projeto com o Django.
+Agora é possível criar um [primeiro projeto](https://github.com/tmenegaz/django/blob/master/projeto1.md) com o Django.
 
 [Creative Commons Attribution 3.0 Unported (CC BY 3.0) License](http://creativecommons.org/licenses/by/3.0/)
