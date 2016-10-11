@@ -25,7 +25,7 @@ Para esse projeto e os demais ambiente de desenvolvimento Python/Django tenha em
 No diretório de trabalho para os projetos desse material crie seu Virtualenv e instale seus pacotes
 > Neste caso estou no diretório Documentos do Linux: /home/tmenegaz/Documentos/)
 
-Abaixo está escritp em uma linha cada um dos comandos necessários para a configuração do ambiente, a partir do carregamento do Virtualenv até a instalação do Django, sepatados por &&.
+Abaixo estão reunidos em apenas uma linha cada um dos comandos necessários para a configuração do ambiente, a partir do carregamento do Virtualenv até a instalação do Django, sepatados por &&.
 ```sh
 $ virtualenv -p python3.5 ./aulaDjango/py3.5 && cd ./aulaDjango/py3.5/ && source ./bin/activate && pip3 install -U pip && sudo pip3 install django==1.9
 ```
