@@ -33,7 +33,7 @@ Abra seu _terminal_ Linux com ```Ctrl+Alt+t```.
 $ virtualenv -p python3.5 ./aulaDjango/py3.5 && cd ./aulaDjango/py3.5/ && source ./bin/activate && pip3 install -U pip && pip3 install django==1.9
 ```
 
-> No windows, abra o _cmd_ com ```Winkey(simbolo windows)+r``` digite _cmd_ e precione ```Enter```, e, então, use o comando abaixo.
+> No windows, abra o _cmd_ com ```Winkey(simbolo windows)+r``` digite _cmd_, precione ```Enter``` e, então, use o comando abaixo.
 ```cmd
 >>virtualenv .\aulaDjango\py3.5 && cd .\aulaDjango\py3.5\ && .\Scripts\activate.bat && pip install -U pip && pip install django==1.9
 ```
