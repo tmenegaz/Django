@@ -3,6 +3,7 @@
 1. **[Primeiro projeto com Django](#primeiro-projeto-com-django)**  
 1.1 [Comandos de ativação do ambiente](#comandos-de-ativação-do-ambiente)  
 2. **[O projeto](#o-projeto)**  
+2.1 [Aula1](#aula1)  
 
 ---
 
@@ -59,11 +60,31 @@ wheel (0.30.0a0)
 ```
 Caso não esteja conforme acima volte para [Comandos de ativação do ambiente](#comandos-de-ativação-do-ambiente)  e refaça o processo.
 
+---
+
+## Aula1
+[Voltar ao topo(Conteúdo)](#conteúdo)  
 Esse primeiro projeto terá o nome _aula1_ e um conjunto de pastas e arquivos gerados automaticamente pelo Django. Em seu diretório ```py3.5$``` digite o comando abaixo para criar seu projeto Django.
 ```sh
 py3.5$ django-admin startproject aula1
 ```
-Agora, por meio da barra de ferramentas do ```Atom```: ```File/Open Folder``` selecione a pasta ```aula1``` e clique em ```ok```.
+> No _cmd_ do Windows digite
+```cmd
+py3.5>django-admin startproject aula1
+```
+
+O projeto pode ser testado em seu ```web browser```. Para isso, acesse por meio do _terminal_ seu diretório _aula1_ e digite o camando abaixo.
+```sh
+aula1$ ./manage.py runserver
+```
+> No _cmd_ do Windows digite
+```cmd
+aula1>.\manage.py runserver
+```
+
+O comando acima carregou o projeto _aula1_ para o servidor interno do Django. Agora acesse em seu ```web browser``` a _url_ [http://127.0.0.1:8000/](http://127.0.0.1:8000/) para ver a mensagem _It worked!_
+
+Agora é chegada a hora de entender o que o comando ```django-admin startproject aula1``` gerou e para que serve cada pasta e arquivo criada. Por meio da barra de ferramentas do ```Atom```: ```File/Open Folder``` selecione a pasta ```aula1``` e clique em ```ok```.
 
 ---
 
