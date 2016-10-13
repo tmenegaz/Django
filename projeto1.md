@@ -81,10 +81,39 @@ aula1$ ./manage.py runserver
 ```cmd
 aula1>.\manage.py runserver
 ```
+Caso surja uma mensagem de alerta em vermelho, execute o camando indicado pelo alerta.
 
-O comando acima carregou o projeto _aula1_ para o servidor interno do Django. Agora acesse em seu ```web browser``` a _url_ [http://127.0.0.1:8000/](http://127.0.0.1:8000/) para ver a mensagem _It worked!_
+O comando acima carregou o projeto _aula1_ para o servidor interno do Django. Agora acesse em seu ```web browser``` a _url_ [http://localhost:8000/](http://127.0.0.1:8000/) para ver a mensagem _It worked!_
 
-Agora é chegada a hora de entender o que o comando ```django-admin startproject aula1``` gerou e para que serve cada pasta e arquivo criada. Por meio da barra de ferramentas do ```Atom```: ```File/Open Folder``` selecione a pasta ```aula1``` e clique em ```ok```.
+Agora é chegada a hora de entender o que o comando ```django-admin startproject aula1``` gerou e para que serve cada pasta e arquivo criadas. Por meio da barra de ferramentas do ```Atom```: ```File/Open Folder``` selecione a pasta ```aula1``` e clique em ```ok```.
+
+O progeto _aula1_ tema a seguinte estrutura, a saber:
+```sh
+../aula1
+├── aula1
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-35.pyc
+│   │   ├── settings.cpython-35.pyc
+│   │   ├── urls.cpython-35.pyc
+│   │   └── wsgi.cpython-35.pyc
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── db.sqlite3
+└── manage.py
+```
+
+Observe que dentro do diretório _aula1_ existe ```aula1  db.sqlite3  manage.py```:
+
+- _aula1_  - a representação do modelo lógica da visão e do controle de seu projeto deverão ser organizadas e configuradas neste local. Aqui estão outros diretório e vários aquivos com extenção ```.py```, que podem servir para modularizar seu projeto.
+- _db.sqlite3_ - é um arquivo gerado a partir das propriedades do dicionário ```DATABASES``` contido no arquivo ```/aula1/settings.py```.
+- _manager.py_ - esse arquivo carrega as configurações contidas no ```/aula1/settings.py```, inicia o servidor com o projeto.
+
+No diretório ```/aula1/aula1``` existem arquivos e diretórios diversos. Nesse momento o foco será direcionado  para a configuração do projeto, definiçao da views, determnação do url. Não trataremos do ```wsgi.py```, do ```pycache``` e do ```init.py```, nesse momento.
+
+
+
 
 ---
 
