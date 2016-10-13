@@ -34,7 +34,7 @@ Abra seu _terminal_ Linux com ```Ctrl+Alt+t```.
 $ virtualenv -p python3.5 ./aulaDjango/py3.5 && cd ./aulaDjango/py3.5/ && source ./bin/activate && pip3 install -U pip && pip3 install django==1.9
 ```
 
-> No windows, abra o _cmd_ com ```Winkey(simbolo windows)+r``` digite _cmd_, precione ```Enter``` e, então, use o comando abaixo.
+> No windows, abra o _cmd_: ```Winkey(simbolo windows)+r```; digite _cmd_; precione ```Enter``` e; então, use o comando abaixo.
 ```cmd
 >>virtualenv .\aulaDjango\py3.5 && cd .\aulaDjango\py3.5\ && .\Scripts\activate.bat && pip install -U pip && pip install django==1.9
 ```
@@ -104,13 +104,13 @@ O progeto _aula1_ tema a seguinte estrutura, a saber:
 └── manage.py
 ```
 
-Observe que dentro do diretório _aula1_ existe ```aula1  db.sqlite3  manage.py```:
+Observe que dentro do diretório _aula1_ existe ```aula1,  db.sqlite3,  manage.py```:
 
 - _aula1_  - a representação do modelo lógica da visão e do controle de seu projeto deverão ser organizadas e configuradas neste local. Aqui estão outros diretório e vários aquivos com extenção ```.py```, que podem servir para modularizar seu projeto.
 - _db.sqlite3_ - é um arquivo gerado a partir das propriedades do dicionário ```DATABASES``` contido no arquivo ```/aula1/settings.py```.
-- _manager.py_ - esse arquivo carrega as configurações contidas no ```/aula1/settings.py```, inicia o servidor com o projeto.
+- _manager.py_ - esse arquivo carrega as configurações contidas no ```/aula1/settings.py``` e inicia o servidor com o projeto.
 
-No diretório ```/aula1/aula1``` existem arquivos e diretórios diversos. Nesse momento o foco será direcionado  para a configuração do projeto, definiçao da views, determinação do url. Não trataremos do ```wsgi.py```, do ```pycache``` e do ```init.py```, nesse momento.
+Em ```/aula1/aula1``` existem arquivos e diretórios diversos. Nesse momento o foco será direcionado  para a configuração do projeto, definiçao da views, determinação do url. Não trataremos do ```wsgi.py```, do ```pycache``` e do ```init.py```, nesse momento.
 
 
 ---
