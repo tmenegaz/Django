@@ -110,9 +110,7 @@ Observe que dentro do diretório _aula1_ existe ```aula1  db.sqlite3  manage.py`
 - _db.sqlite3_ - é um arquivo gerado a partir das propriedades do dicionário ```DATABASES``` contido no arquivo ```/aula1/settings.py```.
 - _manager.py_ - esse arquivo carrega as configurações contidas no ```/aula1/settings.py```, inicia o servidor com o projeto.
 
-No diretório ```/aula1/aula1``` existem arquivos e diretórios diversos. Nesse momento o foco será direcionado  para a configuração do projeto, definiçao da views, determnação do url. Não trataremos do ```wsgi.py```, do ```pycache``` e do ```init.py```, nesse momento.
-
-
+No diretório ```/aula1/aula1``` existem arquivos e diretórios diversos. Nesse momento o foco será direcionado  para a configuração do projeto, definiçao da views, determinação do url. Não trataremos do ```wsgi.py```, do ```pycache``` e do ```init.py```, nesse momento.
 
 
 ---
