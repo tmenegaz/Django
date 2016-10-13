@@ -159,7 +159,7 @@ $ revirtualenv <nomeDaPasta>
 >>revirtualenv <nomeDaPasta>
 ```
 
-Agora, caso tenah desativado o Virtualenv inicie-o para instalar o Django e criar seu primeiro projeto.
+Agora, caso tenha desativado o Virtualenv inicie-o para instalar o Django e criar seu primeiro projeto.
 
 # Instalar o Django
 [Voltar ao topo(Conteúdo)](#conteúdo)
@@ -169,13 +169,13 @@ Uma vez instalado o Python 3, o pip e o Virtualenv é hora de instalar o Django.
 $ pip3 install -U pip # atualiza o pip3 (recomendado)
 $ sudo pip3 install django==1.9
 ```
-> Lembre-se, no Windos não utilize o _3_ depois do _pip_ e nem a palavra _sudo__.
+> Lembre-se, no Windos não utilize o _3_ depois do _pip_ e nem a palavra _sudo_.
 ```cmd
 >>pip install -U pip # atualiza o pip
 >>pip install django==1.9
 ```
 
-Uma dica: o pip3 permite fazer uma lista dos potes que estão em um certo computador para, posteriormente, isntalá-los em outro computador:
+Uma dica: o pip3 permite fazer uma lista dos pacotes que estão em um certo computador para, posteriormente, isntalá-los em outro computador:
 
 ```sh
 $ pip3 freeze > requeriments.txt
