@@ -136,7 +136,7 @@ Por exemplo: para um pasta meuprojeto/py3.5
 ```sh
 $ source meuprojeto/py3.5/bin/activate
 ```
-> No Windows dentro do diretório que você criou o Virtualenv será criada, dentre outras pastas e arquivos, a pasta _Script_ com o _activate_. Sendo assim invoque o activate:
+> No Windows, dentro do diretório que você criou o Virtualenv, será criada, dentre outras pastas e arquivos, a pasta _Script_ com o _activate_. Sendo assim invoque o activate:
 ```cmd
 >>meuprojeto/py3.5/Script/activate
 ```
