@@ -29,7 +29,7 @@ No diretório de trabalho para os projetos desse material crie seu Virtualenv e 
 > Neste caso, estou no diretório Documentos do Linux: /home/tmenegaz/Documentos/)
 
 Abaixo estão, reunidos em apenas uma linha, cada um dos comandos necessários para a configuração do ambiente, a partir do carregamento do Virtualenv até a instalação do Django, sepatados por &&.
-Abra seu _terminal_ Linux com ```Ctrl+Alt+t```.
+Abra seu _terminal_ Linux com ```Ctrl+Alt+t``` e digite:
 ```sh
 $ virtualenv -p python3.5 ./aulaDjango/py3.5 && cd ./aulaDjango/py3.5/ && source ./bin/activate && pip3 install -U pip && pip3 install django==1.9
 ```
@@ -81,7 +81,7 @@ aula1$ ./manage.py runserver
 ```cmd
 aula1>.\manage.py runserver
 ```
-Caso surja uma mensagem de alerta em vermelho, execute o camando indicado pelo alerta.
+Caso surja uma mensagem de alerta em vermelho, no terminal, execute o camando indicado pelo alerta.
 
 O comando acima carregou o projeto _aula1_ para o servidor interno do Django. Agora acesse em seu ```web browser``` a _url_ [http://localhost:8000/](http://127.0.0.1:8000/) para ver a mensagem _It worked!_
 
@@ -106,12 +106,13 @@ O progeto [_aula1_](https://github.com/tmenegaz/django/tree/master/aulaDjango/py
 
 Observe que dentro do diretório _aula1_ existe ```aula1,  db.sqlite3,  manage.py```:
 
-- _aula1_  - a representação do modelo lógica da visão e do controle de seu projeto deverão ser organizadas e configuradas neste local. Aqui estão outros diretório e vários aquivos com extenção ```.py```, que podem servir para modularizar seu projeto.
+- _aula1_  - a representação do modelo lógica da visão e do controle de seu projeto deverão ser organizadas e configuradas neste conteiner. O nome dado para este diretório pode ser qualquer um, isso não importa para o Django. Neste conteiner estão outros diretório e vários aquivos com extenção ```.py```, que podem servir para modularizar seu projeto.
 - _db.sqlite3_ - é um arquivo gerado a partir das propriedades do dicionário ```DATABASES``` contido no arquivo ```/aula1/settings.py```.
-- _manager.py_ - esse arquivo carrega as configurações contidas no ```/aula1/settings.py``` e inicia o servidor com o projeto.
+- _manager.py_ - esse arquivo carrega as configurações contidas no ```/aula1/settings.py``` e inicia o servidor com o projeto a partir do comando ```rnserver```.
 
-Em ```/aula1/aula1``` existem arquivos e diretórios diversos. Nesse momento o foco será direcionado  para a configuração do projeto, definiçao da views, determinação do url. Não trataremos do ```wsgi.py```, do ```pycache``` e do ```init.py```, nesse momento.
+Em ```/aula1/aula1``` existem arquivos e diretórios diversos. Nesse momento o foco será direcionado  para a configuração do projeto, definição da views e determinação do url. Não trataremos do ```wsgi.py```, do ```pycache``` e do ```init.py```, nesse momento. Para mais informações consulte a documentação em _[docs.djangoproject.com](https://docs.djangoproject.com/en/1.9/intro/tutorial01/)_
 
+Observe que não existe nenhuma arquivo ```.html``` ou ```views.py``` que possa ser identificado como o arquivo que contém a frase em inglês "_It worked!_". Para mudar de ingês para português a informação de que o servidor esta a funcinar, modifique, em seu arquivo ```/aula1/settings.py``` o trecho: ```LANGUAGE_CODE = 'en-us'``` e ```TIME_ZONE = 'UTC'``` por ```LANGUAGE_CODE = 'pt-br'``` e ```TIME_ZONE = 'America/Bahia'```. Vamos produzir alguma coisa em [aula2](https://github.com/tmenegaz/django/blob/master/aula2.md).
 
 ---
 
