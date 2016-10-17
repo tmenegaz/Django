@@ -112,7 +112,7 @@ Observe que dentro do diretório _aula1_ existe ```aula1,  db.sqlite3,  manage.p
 
 Em ```/aula1/aula1``` existem arquivos e diretórios diversos. Nesse momento o foco será direcionado  para a configuração do projeto, definição da views e determinação do url. Não trataremos do ```wsgi.py```, do ```pycache``` e do ```init.py```, nesse momento. Para mais informações consulte a documentação em _[docs.djangoproject.com](https://docs.djangoproject.com/en/1.9/intro/tutorial01/)_
 
-Observe que não existe nenhuma arquivo ```.html``` ou ```views.py``` que possa ser identificado como o arquivo que contém a frase em inglês "_It worked!_". Para mudar de ingês para português a informação de que o servidor esta a funcinar, modifique, em seu arquivo ```/aula1/settings.py``` o trecho: ```LANGUAGE_CODE = 'en-us'``` e ```TIME_ZONE = 'UTC'``` por ```LANGUAGE_CODE = 'pt-br'``` e ```TIME_ZONE = 'America/Bahia'```. Vamos produzir alguma coisa em [aula2](https://github.com/tmenegaz/django/blob/master/aula2.md).
+Observe que não existe nenhuma arquivo ```.html``` ou ```views.py``` que possa ser identificado como o arquivo que contém a frase em inglês "_It worked!_". Para mudar de inglês para português a informação de que o servidor esta a funcinar, modifique, em seu arquivo ```/aula1/settings.py``` o trecho: ```LANGUAGE_CODE = 'en-us'``` e ```TIME_ZONE = 'UTC'``` por ```LANGUAGE_CODE = 'pt-br'``` e ```TIME_ZONE = 'America/Bahia'```. Com isso alteramos as características de _internacionalização_ do _Django_,  assumindo o nosso idioma nativo como padrão para aplicações futuras. Vamos produzir alguma coisa em [aula2](https://github.com/tmenegaz/django/blob/master/aula2.md).
 
 ---
 
