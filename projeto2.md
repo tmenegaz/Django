@@ -32,7 +32,7 @@ Se quiser teste seu projeto da mesma forma que voi feito anteriormente, corregue
 
 Por meio da barra de ferramentas do ```Atom```: ```File/Open Folder``` selecione a pasta ```aula2``` e clique em ```ok```.
 
-O projeto [_aula2_](https://github.com/tmenegaz/django/tree/master/aulaDjango/py3.5) tem a mesma estrutura do projeto [_aula1_](https://github.com/tmenegaz/django/tree/master/aulaDjango/py3.5). O que faremos é aproveitar essa estrutura para criar a nossa própria _view_ e indicar o caminho pela _urls_ para que o _browser_ encontre o conteúdo da _view_. Nesse caso testaremos se o _navegador_ retorna na tela a frase **Hello World!**. Esse processo será, em um primeiro momento, construido sem a modularização ofericida como padrão pela instrução ```django-admin```. Aqui, nesse momento, aglutina-se a _view_ no arquivo _settings.py_. O que se quer com isso é mostrar a grande capacidade de acoplamento do Python para trechos de códigos que podem ser reunidos em um arquivo ou em arquivos distintos. Isso é possível, em _Python_, sem demandar esforços para além da _sintaxe_ da Linguagem.
+O projeto [_aula2_](https://github.com/tmenegaz/django/tree/master/aulaDjango/py3.5/aula2/aula2) tem a mesma estrutura do projeto [_aula1_](https://github.com/tmenegaz/django/tree/master/aulaDjango/py3.5/aula1/aula1). O que faremos é aproveitar essa estrutura para criar a nossa própria _view_ e indicar o caminho pela _urls_ para que o _browser_ encontre o conteúdo da _view_. Nesse caso testaremos se o _navegador_ retorna na tela a frase **Hello World!**. Esse processo será, em um primeiro momento, construido sem a modularização ofericida como padrão pela instrução ```django-admin```. Aqui, nesse momento, aglutina-se a _view_ no arquivo _settings.py_. O que se quer com isso é mostrar a grande capacidade de acoplamento do Python para trechos de códigos que podem ser reunidos em um arquivo ou em arquivos distintos. Isso é possível, em _Python_, sem demandar esforços para além da _sintaxe_ da Linguagem.
 
 ---
 
@@ -66,7 +66,7 @@ No trecho de código apresentado para a ```urls.py``` importa-se o módulo ```ur
 
 Teste seu projeto como da outra vez: corregue-o no _browser_ por meio do comando ```./manage.py runserver```. O que será visto é o conteúdo ```Hello Horld!```.
 
-Para a [_aula3_](https://github.com/tmenegaz/django/tree/master/aulaDjango/py3.5) vamos criar nossa primira página ```html``` com ```css``` externo para ilustrar uma aplicação.
+Para a [_aula3_](https://github.com/tmenegaz/django/tree/master/aulaDjango/py3.5/aula3/aula3) vamos criar nossa primira página ```html``` com ```css``` externo para ilustrar uma aplicação.
 
 ---
 
