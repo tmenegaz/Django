@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # meus app em templates
+    'aula3',
 ]
 
 MIDDLEWARE_CLASSES = [
