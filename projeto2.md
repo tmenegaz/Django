@@ -1,8 +1,8 @@
 # Conteúdo
 
 1. **[O projeto](#o-projeto)**  
-1.1 [Aula2](#aula2)  
-1.2 [Alteração do settings.py](#alteração-do-settings.py)
+1.1. [Aula2](#aula2)  
+1.2. [Alteração do settings.py](#alteração-do-settingspy)  
 
 ---
 
