@@ -119,3 +119,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# A views para um hello World!
+# Essa views poderia ter sido criada em um arquivo views.py e
+# chamada na urls.py para a settings.py.
+from django.http import HttpResponse
+
+def helloWorld(request):
+    return HttpResponse("Hello World!")
+# fim da views
