@@ -66,7 +66,7 @@ No trecho de código apresentado para a ```urls.py``` importa-se o módulo ```ur
 
 Teste seu projeto como da outra vez: corregue-o no _browser_ por meio do comando ```./manage.py runserver```. O que será visto é o conteúdo ```Hello Horld!```.
 
-Para a [_aula3_](https://github.com/tmenegaz/django/tree/master/aulaDjango/py3.5/aula3) vamos criar nossa primira página ```html``` com ```css``` externo para ilustrar uma aplicação.
+Para a [_aula3_](https://github.com/tmenegaz/django/tree/master/aulaDjango/py3.5/aula3) vamos criar nossa primira página ```html``` com ```css``` externo para ilustrar uma aplicação. Veja como isso será feito no [3º projeto](https://github.com/tmenegaz/django/blob/master/projeto3.md).
 
 ---
 
