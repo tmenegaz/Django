@@ -125,7 +125,7 @@ A única alteração necessária no arquivo ```settings.py``` será acrescentar 
 ]
 ```
 Dessa forma indicamos ao _Django_ que temos uma aplicação própria, não padrão. Isso quer dizer que nossa aplicação pode ser compatível com a regra de negócio proposta a partir de um fato concreto.
-O projeto está pronto e todo o código pode ser acessado e modificado. clique em  [aula3](https://github.com/tmenegaz/django/tree/master/aulaDjango/py3.5/aula3).
+O projeto está pronto e todo o código pode ser acessado e modificado. Clique em  [aula3](https://github.com/tmenegaz/django/tree/master/aulaDjango/py3.5/aula3).
 
 ---
 
