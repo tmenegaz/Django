@@ -31,20 +31,18 @@ Primeiro crie as pastas e diretórios abaixo
 
 O Django classifica arquivos com extensão ```jpg```, ```css```, ```html```, ```js``` _etc_ como estáticos. Esses arquivos serão explorados na medida em que houver demandas. Para cada um dos arquivos, crie elementos _tags_ básicos e _seletores_ correspondentes para testar sua aplicação.
 
-No arquiivo ```skyn.css``` foram digitadas as seguintes linhas:
+Em ```$ aula3/templates/aula3/css/``` crie um arquivo ```skyn.css``` com os seguintes seletores:
  ```css
  @charset "UTF-8";
-
 body {
     background-color: #000;
 }
-
 h1 {
     color: #fff;
 }
  ```
 
-No arquivo ```index.html``` tem-se as seguintes _tags_:
+Em ```$ aula3/templates/aula3/```, crie um arquivo chamado ```index.html``` com as seguintes _tags_:
 ```html
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -59,17 +57,19 @@ No arquivo ```index.html``` tem-se as seguintes _tags_:
 </html>
 ```
 
-Em ```$ aula3/aula3/``` crie  seu arquivo ```views.py``` com o seginte código:
+Em ```$ aula3/aula3/``` crie  seu arquivo ```views.py``` com as seguintes funções:
 ```py
+from django.shortcuts import render
+from django.http import HttpResponse
 def index(request):
     return render(request,'aula3/index.html',{})
-
 def OlaMundo(request):
     return HttpResponse("Olá mundo!")
-
 def status_code(request):
     return HttpResponse("Resposta %s" % (HttpResponse.status_code))
 ```
+As funções de _Python_ no arquivo ```views.py``` tem suas ações bem definodas: Solicitar ao servidor _Web_ - ```request``` -  e receber a resposta do servidor - ```response```. As respostas podem ser o conteúdo em uma página ```html```, uma imagem, um vídeo, um audio, um _erro_ _404_, um arquivo ```xml``` ou, de fato, qualquer coisa que esteja no servidor. Em verdade, essa funções poderiam estar em qualquer arquivo, mas convencionou-se chamar esse arquivo de ```views.py```.
+No trecho de código acima são importadas a classe _HttpResponse_ e a função _render_. A classe é utilizada para obter uma resposta do servidor, neste caso a ```str``` passada como argumanto em seu construtor. A função _render_ acessa e renderiza uma página a partir do topo da árvore do seu diretório em _templates_. portanto, receberá o conteúdo da página ```index.html```.  
 
 Na ```urls.py``` digite conforme abaixo:
 ```py
@@ -81,6 +81,8 @@ urlpatterns = [
     url(r'^status/$', views.status_code, name='status_code'),
 ]
 ```
+O arquivo que mapeia as rotas para o ```views.py``` é o arquivo ```urls.py```.
+Ele tem a função de fazer a ponte da ```views.py``` com o ```settings.py``` por maio da constante ```ROOT_URLCONF = 'aula3.urls'```, em ```settings.py```.
 
 Após criar os diretórios e arquivos, o seu projeto terá a seguinte disposição:
 ```py
@@ -106,11 +108,24 @@ Após criar os diretórios e arquivos, o seu projeto terá a seguinte disposiç�
 └── manage.py
 ```
 
-
 ---
 
-# Alteração do settings.py
+# Alteração do settings.py  
 [Voltar ao topo(Conteúdo)](#conteúdo)  
+A única alteração necessária no arquivo ```settings.py``` será acrescentar ```aula3``` no final da lista da constante ```INSTALLED_APPS```, conforme abaixo:
+ ```py
+ INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    # meus app em templates
+    'aula3',
+]
+```
+Dessa forma indicamos ao _Django_ que temos uma aplicação própria, não padrão. Isso quer dizer que nossa aplicação pode ser compatível com a regra de negócio proposta a partir de um fato concreto.
 
 ---
 
