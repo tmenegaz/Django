@@ -3,7 +3,6 @@
 1. **[O projeto](#o-projeto)**  
 1.1. [Aula3](#aula3)  
 1.2. [Alteração do settings.py](#alteração-do-settingspy)  
-1.3. [Arquivos estáticos](#arquivos-estáticos)
 
 ---
 
@@ -126,11 +125,7 @@ A única alteração necessária no arquivo ```settings.py``` será acrescentar 
 ]
 ```
 Dessa forma indicamos ao _Django_ que temos uma aplicação própria, não padrão. Isso quer dizer que nossa aplicação pode ser compatível com a regra de negócio proposta a partir de um fato concreto.
-
----
-
-# Arquivos estáticos
-[Voltar ao topo(Conteúdo)](#conteúdo)  
+O projeto está pronto e todo o código pode ser acessado e modificado. clique em  [aula3](https://github.com/tmenegaz/django/tree/master/aulaDjango/py3.5/aula3).
 
 ---
 
