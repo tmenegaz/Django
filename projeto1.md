@@ -87,7 +87,7 @@ O comando acima carregou o projeto _aula1_ para o servidor interno do Django. Ag
 
 Agora é chegada a hora de entender o que o comando ```django-admin startproject aula1``` gerou e para que serve cada pasta e arquivo criadas. Por meio da barra de ferramentas do ```Atom```: ```File/Open Folder``` selecione a pasta ```aula1``` e clique em ```ok```.
 
-O projeto [_aula1_](https://github.com/tmenegaz/django/tree/master/aulaDjango/py3.5) tema a seguinte estrutura, a saber:
+O projeto [_aula1_](https://github.com/tmenegaz/django/tree/master/aulaDjango/py3.5/aula1) tema a seguinte estrutura, a saber:
 ```sh
 ../aula1
 ├── aula1
