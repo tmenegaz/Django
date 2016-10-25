@@ -127,6 +127,8 @@ A única alteração necessária no arquivo ```settings.py``` será acrescentar 
 Dessa forma indicamos ao _Django_ que temos uma aplicação própria, não padrão. Isso quer dizer que nossa aplicação pode ser compatível com a regra de negócio proposta a partir de um fato concreto.
 O projeto está pronto e todo o código pode ser acessado e modificado. Clique em  [aula3](https://github.com/tmenegaz/django/tree/master/aulaDjango/py3.5/aula3).
 
+Com isso chega ao fim a oficina para divulgação e apresentação do Framework _Django_ que ocorreu no _MundoSenai_.
+
 ---
 
 [Creative Commons Attribution 3.0 Unported (CC BY 3.0) License](http://creativecommons.org/licenses/by/3.0/)
