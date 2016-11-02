@@ -132,7 +132,7 @@ A constante ```STATICFILES_DIRS = [os.path.join(BASE_DIR, 'statics'),]``` no fin
 
 Para tornar o arquivo `css` que está em `$ aula3/aula3/statics/css/skin.css` devemos configurar o arquivo `html` e o arquivo `urls.py`.
 
-Até aqui é possível acessar o projeto pronto em  [aula3](https://github.com/tmenegaz/django/tree/master/aulaDjango/py3.5/aula3). Antes de acessar o códogo completo, teste seu código e faça a última configuração para dar cor e forma ao seu `app`.
+Até aqui é possível acessar o projeto pronto em  [aula3](https://github.com/tmenegaz/django/tree/master/aulaDjango/py3.5/aula3) e ver `settings.py`. Antes de acessar o códogo completo, teste seu código e faça a última configuração para dar cor e forma ao seu `app`.
 
 ---
 
