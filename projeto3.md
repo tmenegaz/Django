@@ -128,7 +128,7 @@ As únicas alteração necessária no arquivo ```settings.py``` serão acrescent
     'static',
 ]
 ```
-A constante ```STATIC_ROOT = (os.path.join(BASE_DIR, 'statics'))``` no final do arquivo ```settings.py```. E, por fim, preencher a lista `'DIRS': []` em `TEMPLATES` com `os.path.join(BASE_DIR, 'templates')`.  Agora o _Django_ pode achar o arquivo ```html```. Dessa forma indicamos ao _Django_ que temos uma aplicação própria, não padrão. Isso quer dizer que nossa aplicação pode ser compatível com a regra de negócio proposta a partir de um fato concreto. Por padrão, está abilitada a tag especial do _Django_ ```{%  %}``` e o comando ```collectstatics```, ambos, de ```'django.contrib.staticfiles'``` na lista constante ```INSTALLED_APPS```.
+A constante ```STATICFILES_DIRS = [os.path.join(BASE_DIR, 'statics'),]``` no final do arquivo ```settings.py```. E, por fim, preencher a lista `'DIRS': []` em `TEMPLATES` com `os.path.join(BASE_DIR, 'templates')`.  Agora o _Django_ pode achar o arquivo ```html```. Dessa forma indicamos ao _Django_ que temos uma aplicação própria, não padrão. Isso quer dizer que nossa aplicação pode ser compatível com a regra de negócio proposta a partir de um fato concreto. Por padrão, está abilitada a tag especial do _Django_ ```{%  %}``` e o comando ```collectstatics```, ambos, de ```'django.contrib.staticfiles'``` na lista constante ```INSTALLED_APPS```.
 
 Para tornar o arquivo `css` que está em `$ aula3/aula3/statics/css/skin.css` devemos configurar o arquivo `html` e o arquivo `urls.py`.
 
