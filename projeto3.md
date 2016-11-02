@@ -3,6 +3,7 @@
 1. **[O projeto](#o-projeto)**  
 1.1. [Aula3](#aula3)  
 1.2. [Alteração do settings.py](#alteração-do-settingspy)  
+1.3. [Arquivos estáticos](#arquivos-estáticos)
 
 ---
 
@@ -18,19 +19,21 @@ Com o _Virtualenv_ ativado crie seu projeto. Caso existam dúvudas, ainda, quant
 
 O projeto _aula3_ terá arquivos _estáticos_, uma views e um _urls_ configurado para acessar o conteúdo do página com a estilização determinada.
 
-Primeiro crie as pastas e diretórios abaixo
+Primeiro crie os diretórios e arquivos abaixo em `aula3`
 ```sh
-  aula3
-│   ├── templates
-│   │   └── aula3
-│   │       ├── css
-│   │       │   └── skyn.css
-│   │       └── index.html
+  ./
+├── aula3
+├── statics
+│   └── css
+│       └── skin.css
+└── templates
+    └── index.html
+
 ```
 
-O Django classifica arquivos com extensão ```jpg```, ```css```, ```html```, ```js``` _etc_ como estáticos. Esses arquivos serão explorados na medida em que houver demandas. Para cada um dos arquivos, crie elementos _tags_ básicos e _seletores_ correspondentes para testar sua aplicação.
+O Django classifica arquivos com extensão ```jpg```, ```css```, ```js``` _etc_ como estáticos e ```html``` como templates. Esses arquivos serão explorados na medida em que houver demandas. Para cada um dos arquivos, crie elementos _tags_ básicos e _seletores_ correspondentes para testar sua aplicação.
 
-Em ```$ aula3/templates/aula3/css/``` crie um arquivo ```skyn.css``` com os seguintes seletores:
+Em ```$ aula3/statics/css/``` crie um arquivo ```skin.css``` com os seguintes seletores:
  ```css
  @charset "UTF-8";
 body {
@@ -41,13 +44,13 @@ h1 {
 }
  ```
 
-Em ```$ aula3/templates/aula3/```, crie um arquivo chamado ```index.html``` com as seguintes _tags_:
+Em ```$ aula3/templates/```, crie um arquivo chamado ```index.html``` com as seguintes _tags_:
 ```html
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/skyn.css">
+    <link rel="stylesheet" href="css/skyn.css" />
     <title>Index</title>
 </head>
 <body>
@@ -81,7 +84,7 @@ urlpatterns = [
 ]
 ```
 O arquivo que mapeia as rotas para o ```views.py``` é o arquivo ```urls.py```.
-Ele tem a função de fazer a ponte da ```views.py``` com o ```settings.py``` por maio da constante ```ROOT_URLCONF = 'aula3.urls'```, em ```settings.py```.
+Ele tem a função de fazer a ponte da ```views.py``` com o ```settings.py``` por maio da constante ```ROOT_URLCONF = 'static.urls'```, em ```settings.py```.
 
 Após criar os diretórios e arquivos, o seu projeto terá a seguinte disposição:
 ```py
@@ -95,23 +98,24 @@ Após criar os diretórios e arquivos, o seu projeto terá a seguinte disposiç�
 │   │   ├── views.cpython-35.pyc
 │   │   └── wsgi.cpython-35.pyc
 │   ├── settings.py
-│   ├── templates
-│   │   └── aula3
-│   │       ├── css
-│   │       │   └── skyn.css
-│   │       └── index.html
 │   ├── urls.py
 │   ├── views.py
 │   └── wsgi.py
 ├── db.sqlite3
-└── manage.py
+├── manage.py
+├── statics
+│   └── css
+│       └── skin.css
+└── templates
+    └── index.html
+
 ```
 
 ---
 
 # Alteração do settings.py  
 [Voltar ao topo(Conteúdo)](#conteúdo)  
-A única alteração necessária no arquivo ```settings.py``` será acrescentar ```aula3``` no final da lista da constante ```INSTALLED_APPS```, conforme abaixo:
+As únicas alteração necessária no arquivo ```settings.py``` serão acrescentar ```static``` no final da lista da constante ```INSTALLED_APPS```, conforme abaixo:
  ```py
  INSTALLED_APPS = [
     'django.contrib.admin',
@@ -121,14 +125,55 @@ A única alteração necessária no arquivo ```settings.py``` será acrescentar 
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # meus app em templates
-    'aula3',
+    'static',
 ]
 ```
-Dessa forma indicamos ao _Django_ que temos uma aplicação própria, não padrão. Isso quer dizer que nossa aplicação pode ser compatível com a regra de negócio proposta a partir de um fato concreto.
-O projeto está pronto e todo o código pode ser acessado e modificado. Clique em  [aula3](https://github.com/tmenegaz/django/tree/master/aulaDjango/py3.5/aula3).
+A constante ```STATIC_ROOT = (os.path.join(BASE_DIR, 'statics'))``` no final do arquivo ```settings.py```. E, por fim, preencher a lista `'DIRS': []` em `TEMPLATES` com `os.path.join(BASE_DIR, 'templates')`.  Agora o _Django_ pode achar o arquivo ```html```. Dessa forma indicamos ao _Django_ que temos uma aplicação própria, não padrão. Isso quer dizer que nossa aplicação pode ser compatível com a regra de negócio proposta a partir de um fato concreto. Por padrão, está abilitada a tag especial do _Django_ ```{%  %}``` e o comando ```collectstatics```, ambos, de ```'django.contrib.staticfiles'``` na lista constante ```INSTALLED_APPS```.
 
-Com isso chega ao fim a oficina para divulgação e apresentação do Framework _Django_ que ocorreu no _MundoSenai_.
+Para tornar o arquivo css que está em `$ aula3/aula3/statics/css/skin.css` devemos configurar o arquivo `html` e o arquivo `urls.py`.
+
+Até aqui é possível acessar o projeto pronto em  [aula3](https://github.com/tmenegaz/django/tree/master/aulaDjango/py3.5/aula3). Antes de acessar o códogo completo, teste seu código e faça a última configuração para dar cor e forma ao seu `app`.
 
 ---
+
+# Arquivos estáticos
+[Voltar ao topo(Conteúdo)](#conteúdo)  
+Observe que o arquivo ```css``` não foi carregado na página ```html``` por meio da linha ```<link rel="stylesheet" href="css/skin.css">```. Para carregar o arquivo da folha de estilo faz-se necessário indicar o arquivo `html` em `$ aula3/aula3/templates/index.html`. Acrescente no topo do arquivo, antes do `<!DOCTYPE html>` a _tag _ do _Django_ `{% load staticfiles %}` e modofique a chamada à folha de estilo externa afim de ter a seguinte sintaxe: `<link rel="stylesheet" href='{% static "css/skin.css" %}' type="text/css" />`. Seu arquivo `index.html` deve estar, no mínimo, conforme abaixo:
+```html
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href='{% static "css/skin.css" %}' type="text/css" />
+    <title>Index</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+</body>
+</html>
+```
+O últio arquivo a ser alteradoé o `urls.py`. Inclua as importações `from django.conf import settings` e `from django.conf.urls.static import static`. É importe destacar que este projeto foi criado sem a prentenção de simular um ambiente de produção. E, sendo assim, a constante `DEBUG` está ativado. O fato de se ter o `DEBUD=True` nos leva o configurar o `urls.py` com um acondição que verifica o estado do `DEBUG` em `settings.py` antes de mudar o `urlpatterns`. O código para isso deverá estar da seghinte forma:
+```py
+from django.conf import settings
+from django.conf.urls import url
+from django.conf.urls.static import static
+from . import views
+
+urlpatterns = [
+    url(r'^$', views.index, name='index'),
+    url(r'^ola/mundo/$', views.OlaMundo, name='olaMundo'),
+    url(r'^status/$', views.status_code, name='status_code'),
+]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+```
+
+Para terminar, execute seu projeto com `$ aulaDjango/py3.5/aula3/manage.py runserver`.
+
+Com isso chega ao fim a oficina para divulgação e apresentação do Framework _Django_1.9 com _Python 3_, que ocorreu no _MundoSenai_ edição 2016.
+___
+
 
 [Creative Commons Attribution 3.0 Unported (CC BY 3.0) License](http://creativecommons.org/licenses/by/3.0/)
