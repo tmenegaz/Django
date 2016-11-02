@@ -70,7 +70,7 @@ def OlaMundo(request):
 def status_code(request):
     return HttpResponse("Resposta %s" % (HttpResponse.status_code))
 ```
-As funções de _Python_ no arquivo ```views.py``` tem suas ações bem definodas: Solicitar ao servidor _Web_ - ```request``` -  e receber a resposta do servidor - ```response```. As respostas podem ser o conteúdo em uma página ```html```, uma imagem, um vídeo, um audio, um _erro_ _404_, um arquivo ```xml``` ou, de fato, qualquer coisa que esteja no servidor. Em verdade, essa funções poderiam estar em qualquer arquivo, mas convencionou-se chamar esse arquivo de ```views.py```.
+As funções de _Python_ no arquivo ```views.py``` tem suas ações bem definidas: Solicitar ao servidor _Web_ - ```request``` -  e receber a resposta do servidor - ```response```. As respostas podem ser o conteúdo em uma página ```html```, uma imagem, um vídeo, um audio, um _erro_ _404_, um arquivo ```xml``` ou, de fato, qualquer coisa que esteja no servidor. Em verdade, essa funções poderiam estar em qualquer arquivo, mas convencionou-se chamar esse arquivo de ```views.py```.
 No trecho de código acima são importadas a classe _HttpResponse_ e a função _render_. A classe é utilizada para obter uma resposta do servidor, neste caso a ```str``` passada como argumanto em seu construtor. A função _render_ acessa e renderiza uma página a partir do topo da árvore do seu diretório em _templates_. portanto, receberá o conteúdo da página ```index.html```.  
 
 Na ```urls.py``` digite conforme abaixo:
@@ -130,7 +130,7 @@ As únicas alteração necessária no arquivo ```settings.py``` serão acrescent
 ```
 A constante ```STATIC_ROOT = (os.path.join(BASE_DIR, 'statics'))``` no final do arquivo ```settings.py```. E, por fim, preencher a lista `'DIRS': []` em `TEMPLATES` com `os.path.join(BASE_DIR, 'templates')`.  Agora o _Django_ pode achar o arquivo ```html```. Dessa forma indicamos ao _Django_ que temos uma aplicação própria, não padrão. Isso quer dizer que nossa aplicação pode ser compatível com a regra de negócio proposta a partir de um fato concreto. Por padrão, está abilitada a tag especial do _Django_ ```{%  %}``` e o comando ```collectstatics```, ambos, de ```'django.contrib.staticfiles'``` na lista constante ```INSTALLED_APPS```.
 
-Para tornar o arquivo css que está em `$ aula3/aula3/statics/css/skin.css` devemos configurar o arquivo `html` e o arquivo `urls.py`.
+Para tornar o arquivo `css` que está em `$ aula3/aula3/statics/css/skin.css` devemos configurar o arquivo `html` e o arquivo `urls.py`.
 
 Até aqui é possível acessar o projeto pronto em  [aula3](https://github.com/tmenegaz/django/tree/master/aulaDjango/py3.5/aula3). Antes de acessar o códogo completo, teste seu código e faça a última configuração para dar cor e forma ao seu `app`.
 
@@ -153,7 +153,7 @@ Observe que o arquivo ```css``` não foi carregado na página ```html``` por mei
 </body>
 </html>
 ```
-O últio arquivo a ser alteradoé o `urls.py`. Inclua as importações `from django.conf import settings` e `from django.conf.urls.static import static`. É importe destacar que este projeto foi criado sem a prentenção de simular um ambiente de produção. E, sendo assim, a constante `DEBUG` está ativado. O fato de se ter o `DEBUD=True` nos leva o configurar o `urls.py` com um acondição que verifica o estado do `DEBUG` em `settings.py` antes de mudar o `urlpatterns`. O código para isso deverá estar da seghinte forma:
+O últio arquivo a ser alterado é o `urls.py`. Inclua as importações `from django.conf import settings` e `from django.conf.urls.static import static`. É importe destacar que este projeto foi criado sem a prentenção de simular um ambiente de produção. E, sendo assim, a constante `DEBUG` está ativado. O fato de se ter o `DEBUD=True` nos leva o configurar o `urls.py` com um acondição que verifica o estado do `DEBUG` em `settings.py` antes de mudar o `urlpatterns`. O código para isso deverá estar da seghinte forma:
 ```py
 from django.conf import settings
 from django.conf.urls import url
