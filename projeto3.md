@@ -173,6 +173,9 @@ if settings.DEBUG:
 Para terminar, execute seu projeto com `$ aulaDjango/py3.5/aula3/manage.py runserver`.
 
 Com isso chega ao fim a oficina para divulgação e apresentação do Framework _Django_1.9 com _Python 3_, que ocorreu no _MundoSenai_ edição 2016.
+
+O [próximo projeto](https://github.com/tmenegaz/django/blob/master/projeto4.md) será a criação de um `app` por meio do comando ```python manage.py startapp [app_label]```.
+
 ___
 
 
