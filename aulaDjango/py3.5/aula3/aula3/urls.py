@@ -23,7 +23,7 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^ola/mundo/$', views.OlaMundo, name='olaMundo'),
     url(r'^status/$', views.status_code, name='status_code'),
-]
+] # + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
