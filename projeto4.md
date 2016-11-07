@@ -30,7 +30,7 @@ py3.5$ django-admin startproject aula4
 /py3.5/aula4$ ./manage.py startapp app
 ```
 
-A partir das instruções executadas você teré um conjunto de diretórios e arquivos organizados da seguinte forma:
+A partir das instruções executadas você terá um conjunto de diretórios e arquivos organizados da seguinte forma:
 ```sh
 ../aula4
 ├── app
