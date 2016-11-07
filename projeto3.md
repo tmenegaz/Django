@@ -115,7 +115,9 @@ Após criar os diretórios e arquivos, o seu projeto terá a seguinte disposiç�
 
 # Alteração do settings.py  
 [Voltar ao topo(Conteúdo)](#conteúdo)  
-As únicas alteração necessária no arquivo ```settings.py``` serão acrescentar ```static``` no final da lista da constante ```INSTALLED_APPS```, conforme abaixo:
+Algumas alteração necessária no arquivo ```settings.py```.
+
+- acrescentar ```static``` no final da lista da constante ```INSTALLED_APPS```, conforme abaixo:
  ```py
  INSTALLED_APPS = [
     'django.contrib.admin',
@@ -128,7 +130,9 @@ As únicas alteração necessária no arquivo ```settings.py``` serão acrescent
     'static',
 ]
 ```
-A constante ```STATICFILES_DIRS = [os.path.join(BASE_DIR, 'statics'),]``` no final do arquivo ```settings.py```. E, por fim, preencher a lista `'DIRS': []` em `TEMPLATES` com `os.path.join(BASE_DIR, 'templates')`.  Agora o _Django_ pode achar o arquivo ```html```. Dessa forma indicamos ao _Django_ que temos uma aplicação própria, não padrão. Isso quer dizer que nossa aplicação pode ser compatível com a regra de negócio proposta a partir de um fato concreto. Por padrão, está abilitada a tag especial do _Django_ ```{%  %}``` e o comando ```collectstatics```, ambos, de ```'django.contrib.staticfiles'``` na lista constante ```INSTALLED_APPS```.
+- escreva constante ```STATICFILES_DIRS = [os.path.join(BASE_DIR, 'statics'),]``` no final do arquivo ```settings.py```.
+- preencher a lista `'DIRS': []` em `TEMPLATES` com `os.path.join(BASE_DIR, 'templates')`.
+Agora o _Django_ pode achar o arquivo ```html```. Dessa forma indicamos ao _Django_ que temos uma aplicação própria, não padrão. Isso quer dizer que nossa aplicação pode ser compatível com a regra de negócio proposta a partir de um fato concreto. Por padrão, está abilitada a tag especial do _Django_ ```{%  %}``` e o comando ```collectstatics```, ambos, de ```'django.contrib.staticfiles'``` na lista constante ```INSTALLED_APPS```.
 
 Para tornar o arquivo `css` que está em `$ aula3/aula3/statics/css/skin.css` devemos configurar o arquivo `html` e o arquivo `urls.py`.
 
@@ -153,7 +157,7 @@ Observe que o arquivo ```css``` não foi carregado na página ```html``` por mei
 </body>
 </html>
 ```
-O últio arquivo a ser alterado é o `urls.py`. Inclua as importações `from django.conf import settings` e `from django.conf.urls.static import static`. É importe destacar que este projeto foi criado sem a prentenção de simular um ambiente de produção. E, sendo assim, a constante `DEBUG` está ativado. O fato de se ter o `DEBUD=True` nos leva o configurar o `urls.py` com um acondição que verifica o estado do `DEBUG` em `settings.py` antes de mudar o `urlpatterns`. O código para isso deverá estar da seghinte forma:
+O últio arquivo a ser alterado é o `urls.py`. Inclua as importações `from django.conf import settings` e `from django.conf.urls.static import static`. É importe destacar que este projeto foi criado sem a prentenção de simular um ambiente de produção. E, sendo assim, a constante `DEBUG` está ativado. O fato de ter o `DEBUD=True` nos leva o configurar o `urls.py` com uma condição que verifica o estado do `DEBUG` em `settings.py` antes de mudar o `urlpatterns`. O código para isso deverá estar da seghinte forma:
 ```py
 from django.conf import settings
 from django.conf.urls import url
